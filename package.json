@@ -1,7 +1,7 @@
 {
   "name": "true_false_game_react",
   "version": "0.0.1",
-  "description": "Game where the user has to detect whether something is true or false. For example fake news, phising emails, so on",
+  "description": "Game where the user has to detect whether a mail is spam or not",
   "author": "Enrique Barra <ebarra@dit.upm.es> and Ana Estrada <aemartos@gmail.com>",
   "main": "index.js",
   "scripts": {

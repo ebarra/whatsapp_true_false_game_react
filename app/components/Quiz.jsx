@@ -4,12 +4,12 @@ import Animation from './Animation.jsx';
 import {stopAnimation, addObjectives, addSizes} from './../reducers/actions';
 import * as Utils from '../vendors/Utils.js';
 import Icon from './Icon.jsx';
+import MailItem from './MailItem.jsx';
+import MailDetail from './MailDetail.jsx';
 
 export default class Quiz extends React.Component {
   constructor(props){
     super(props);
-    this.updateDimensions = this.updateDimensions.bind(this);
-    this.calculateImgsSizes = this.calculateImgsSizes.bind(this);
     this.toggleFeedback = this.toggleFeedback.bind(this);
     this.total_score = this.props.questions.reduce((accumulator, currentValue) => { return accumulator + currentValue.score; }, 0);
     this.state = {hide_feedback:false};
@@ -17,58 +17,9 @@ export default class Quiz extends React.Component {
   toggleFeedback(){
     this.setState({hide_feedback:!this.state.hide_feedback});
   }
-  updateDimensions(){
-    if(this.img && this.box){
-      let question = this.props.questions[this.props.index];
-      let imgaspect = question.width / question.height;
-      let boxaspect = this.box.clientWidth / this.box.clientHeight;
-      if(imgaspect > boxaspect){
-        this.img.style.height = (this.box.offsetHeight - this.nav.clientHeight - 7) + "px";
-        this.img.style.width = "auto";
-      } else {
-        this.img.style.height = "";
-        this.img.style.width = "";
-      }
-    }
-  }
-  calculateImgsSizes(){
-    let nQuestions = this.props.questions.length;
-    let only_imgs_length = this.props.questions.filter((q) =>{return q.type !== "iframe";}).length;
-    let processed = 0;
-    let sizes = [];
-    for(let i = 0; i < nQuestions; i++){
-      if(this.props.questions[i].type === "iframe"){
-        sizes[i] = null;
-      } else {
-        let img = new Image();
-
-        img.onload = function(){
-          let height = img.height;
-          let width = img.width;
-          // code here to use the dimensions
-          processed += 1;
-          sizes[+img.id] = {width:width, height:height};
-          if(processed === only_imgs_length){
-            this.props.dispatch(addSizes(sizes));
-          }
-        }.bind(this);
-        img.id = i;
-        img.src = this.props.questions[i].path;
-      }
-    }
-  }
-  componentDidMount(){
-    this.updateDimensions();
-    window.addEventListener("resize", this.updateDimensions);
-    this.calculateImgsSizes();
-  }
-  componentWillUnmount(){
-    window.removeEventListener("resize", this.updateDimensions);
-  }
-  componentDidUpdate(prevProps, prevState){
-    if(prevProps.index !== this.props.index){
-      this.updateDimensions();
-    }
+  handleClick(idx){
+    console.log(idx);
+    let question = this.props.questions[idx];
   }
   render(){
     let question = this.props.questions[this.props.index];
@@ -114,7 +65,7 @@ export default class Quiz extends React.Component {
           feedback_iframe = <div className={"feedback_iframe " + (this.state.hide_feedback ? "redux" : "")} key={1}><div className={"feedback_i_content " + (this.state.hide_feedback ? "hide_op" : "")}><p className="content01">{question.source_name}</p><p className="content02">fíjate que viene de un medio reputado y que si buscas en internet información adicional verás la noticia en diferentes webs y periódicos también de prestigio</p></div><div className="toggleFeedback" onClick={() => this.toggleFeedback()} key={0}>ver feedback <Icon icon="down_arrow" className={"control control_down_arrow"}/></div></div>;
         }
       }
-
+      const {questions} = this.props;
       return (
           <div className="main_box" ref={(box) => { this.box = box; }}>
             {show_feedback ? feedback_component : null}
@@ -142,7 +93,7 @@ export default class Quiz extends React.Component {
                   <div className="box_url">
                     <div className="url_group">
                       <span className={nav_sec_class} />
-                      <span className="nav_url">{question.source_url}</span>
+                      <span className="nav_url">https://mail.elab.com/mail/#inbox/{question.source_url}</span>
                     </div>
 
                     <span className="nav_star fa fa-star-o" />
@@ -156,22 +107,21 @@ export default class Quiz extends React.Component {
 
               </div>
             </div>
-            <div className={"image_box " + (show_feedback ? "with_feedback" : "") }>
-              {question.type === "iframe" ?
-                <div className="iframeparent" style={{height:this.box.offsetHeight + "px"}}><iframe src={question.path} scrolling="no" className="eduiframe" /></div>
-              : <img ref={(img) => { this.img = img; }} className={"quiz_image" + (question.with_margins ? " with_margins" : "")} src={show_feedback ? question.feedback_path : question.path} />
-            }
+            <div className={"question_box " + (show_feedback ? "with_feedback" : "") }>
+              <div className="mailList">
+                <ul>
+                  {questions.map((q, idx) => <MailItem dispatch={this.props.dispatch} key={q.subject} subject={q.subject} preview={q.preview} mailer={q.mailer} date={q.date} isActive={idx === this.props.index} idx={idx} />)}
+                </ul>
+              </div>
+              <MailDetail subject={question.subject} preview={question.preview} mailer={question.mailer} date={question.date} mailContent={question.mailContent}/>
             </div>
-            {(question.type === "iframe" && show_feedback && question.show_animation === false) &&
-              feedback_iframe
-            }
           </div>
       );
     }
     return (
-          <div className="main_box" ref={(box) => { this.box = box; }}>
-            <p className="main_text">{this.props.data.initial_text}</p>
-          </div>
+      <div className="main_box" ref={(box) => { this.box = box; }}>
+        <p className="main_text">{this.props.data.initial_text}</p>
+      </div>
     );
 
   }

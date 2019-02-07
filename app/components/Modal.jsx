@@ -21,13 +21,13 @@ export default class Modal extends React.Component {
   render(){
     return (
         <div className={"modal_position " + (this.state.hide ? "hide" : "")}>
-           <CSSTransition
-           in={this.state.in}
-           timeout={500}
-           classNames="fade"
-           onExited={() =>this.hideCompletely()}>
+          <CSSTransition
+          in={this.state.in}
+          timeout={500}
+          classNames="fade"
+          onExited={() =>this.hideCompletely()}>
                 <div className={"modal "}>
-                   {this.props.children}
+                  {this.props.children}
                 </div>
           </CSSTransition>
         </div>

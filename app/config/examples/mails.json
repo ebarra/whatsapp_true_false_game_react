@@ -1,0 +1,345 @@
+{
+  "name":"detector de spam mails",
+  "type_app_text":"mails",
+  "initial_text":"¿sabrías decir si los siguientes mails son spam o no? aprende a distinguirlos, que no te la jueguen",
+  "instructions":"marca verdadero o falso para cada uno de los mails propuestos. irás obteniendo una puntuación según tus aciertos.",
+  "with_reset_button": false,
+  "with_fullscreen": true,
+  "with_extra_logo": false,
+  "with_extra_logo_credits": false,
+  "extra_logo_url": "",
+  "extra_logo_src": "",
+  "extra_logo_src_inverted": "",
+  "feedback2_right": "no es spam",
+  "feedback2_wrong": "es spam",
+  "message_pro": "eres un crack, ¡a ti no hay quien te engañe! sabemos que no necesitas que te enseñemos cómo reconocer spam, pero aquí te dejamos un pequeño vídeo por si quieres saber más:",
+  "message_good": "lo has hecho bastante bien, pero has fallado algunos. revisa el siguiente video para aprender a detectar spam:",
+  "message_ok": "no has acertado muchas. es muy importante detectar bien spam mailing. Te dejamos un video para que aprendas a detectarlos:",
+  "modal_inst": "¿sabes qué mails son spam y cuáles no? contesta lo más rápido que puedas, para sumar puntos y conviértete en experto detector de spam. los controles son muy sencillos, solo tienes que pulsar verdadero o falso en los botones centrales.",
+  "progress_text": "mails revisados",
+  "task_list": "lista de mails a revisar",
+  "final_video": "https://www.youtube.com/embed/Hq813P5FXwE?rel=0",
+  "survey": "",
+  "questions": [
+    {
+      "source_name": "Tu crédito de Amazon Prime expirará",
+      "source_url": "tu-credito-de-amazon-prime-expirara",
+      "secure": true,
+      "true_or_false": false,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+            "button": "actualizar preferencias"
+          }
+        ]
+      },
+      "feedback_path": "https://saludsinbulos.com/alertas/cura-diabetes-natural-clavo-canela/",
+      "feedback_search": "https://www.google.es/search?q=diabetes+dos+ingredientes+bulo",
+      "feedback_sitename": "saludsinbulos"
+    },
+    {
+      "source_name": "lacteos sí, pero no pasteurizados",
+      "source_url": "lacteos",
+      "secure": true,
+      "true_or_false": false,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+            "button": "actualizar preferencias"
+          }
+        ]
+      },
+      "feedback_path": "https://saludsinbulos.com/detras-del-titular/leche-sin-pasteurizar/",
+      "feedback_search": "https://www.google.es/search?q=leche+sin+pasteurizar+bulo",
+      "feedback_sitename": "saludsinbulos"
+    },
+    {
+      "source_name": "alergia a los gatos, ¿tengo que deshacerme de él?",
+      "source_url": "1522699942_976535",
+      "secure": true,
+      "true_or_false": true,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+            "button": "actualizar preferencias"
+          }
+        ]
+      },
+      "feedback_path": "",
+      "feedback_search": "",
+      "feedback_sitename": ""
+    },
+    {
+      "source_name": "patentada una tijera que corta el pelo a fuego",
+      "source_url": "1521192377_540924",
+      "secure": true,
+      "true_or_false": false,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+            "button": "actualizar preferencias"
+          }
+        ]
+      },
+      "feedback_path": "https://saludsinbulos.com/detras-del-titular/alopecia-peluquero-tijera-pelo-fuego/",
+      "feedback_search": "https://www.google.es/search?q=tijera+pelo+alopecia+bulo",
+      "feedback_sitename": "saludsinbulos"
+    },
+    {
+      "source_name": "dieta paleolítica",
+      "source_url": "guia-dieta",
+      "secure": true,
+      "true_or_false": false,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+            "button": "actualizar preferencias"
+          }
+        ]
+      },
+      "feedback_path": "https://saludsinbulos.com/nutricion/dieta-paleolitica/",
+      "feedback_search": "https://www.google.es/search?q=dieta+paleolitica+bulo",
+      "feedback_sitename": "saludsinbulos"
+    },
+    {
+      "source_name": "dispositivo que detecta la meningitis infantil en 3 sec",
+      "source_url": "crean-dispositivo-permite-detectar-meningitis-infantil-3-segundos",
+      "secure": true,
+      "true_or_false": true,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+            "button": "actualizar preferencias"
+          }
+        ]
+      },
+      "feedback_path": "",
+      "feedback_search": "",
+      "feedback_sitename": ""
+    },
+    {
+      "source_name": "dieta de la banana",
+      "source_url": "dieta-de-la-banana",
+      "secure": true,
+      "true_or_false": false,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+            "button": "actualizar preferencias"
+          }
+        ]
+      },
+      "feedback_path": "https://saludsinbulos.com/detras-del-titular/dieta-banana/",
+      "feedback_search": "https://www.google.es/search?q=dieta+banana+bulo",
+      "feedback_sitename": "saludsinbulos"
+    },
+    {
+      "source_name": "patatas de McDonald's curan la calvicie",
+      "source_url": "1517845700_265782",
+      "secure": true,
+      "true_or_false": false,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+            "button": "actualizar preferencias"
+          }
+        ]
+      },
+      "feedback_path": "https://saludsinbulos.com/detras-del-titular/patatas-fritas-dimetilpolisiloxano-alopecia-calvicie/",
+      "feedback_search": "https://www.google.es/search?q=bulo+patatas+mcdonalds+calvicie",
+      "feedback_sitename": "saludsinbulos"
+    },
+    {
+      "source_name": "17 horas sin dormir: límite al volante",
+      "source_url": "5ab15bb0e2704ee2308b4760",
+      "secure": true,
+      "true_or_false": true,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+            "button": "actualizar preferencias"
+          }
+        ]
+      },
+      "feedback_path": "",
+      "feedback_search": "",
+      "feedback_sitename": ""
+    },
+    {
+      "source_name": "arsénico el arroz que consumimos",
+      "source_url": "noticias-38933890",
+      "secure": true,
+      "true_or_false": false,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+            "button": "actualizar preferencias"
+          }
+        ]
+      },
+      "feedback_path": "https://saludsinbulos.com/detras-del-titular/arsenico-arroz/",
+      "feedback_search": "https://www.google.es/search?q=arsenico+arroz+bulo",
+      "feedback_sitename": "saludsinbulos"
+    }
+  ]
+}

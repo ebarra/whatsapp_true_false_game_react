@@ -173,8 +173,8 @@ export default class Controls extends React.Component {
               <div className="app_controls" style={this.props.game.game_ended ? finalStyleAppControls : null}>
                 {this.props.game.questions.length > 1 ?
                   <Icon className={"control control_left_arrow " + is_arrow_disabled} onClick={() => this.handleClick(GO_LEFT)} icon="left_arrow"/> : null}
-                <Icon className={"control control_false " + button_false_extra_class + " " + disabled_extra_class} onClick={() => this.handleClick(false)} icon="false"/>
-                <Icon className={"control control_true " + button_true_extra_class + " " + disabled_extra_class} onClick={() => this.handleClick(true)} icon="true"/>
+                  <Icon className={"control control_false " + button_false_extra_class + " " + disabled_extra_class} onClick={() => this.handleClick(false)} icon="false"/>
+                  <Icon className={"control control_true " + button_true_extra_class + " " + disabled_extra_class} onClick={() => this.handleClick(true)} icon="true"/>
                 {this.props.game.questions.length > 1 ?
                   <Icon className={"control control_right_arrow " + is_arrow_disabled} onClick={() => this.handleClick(GO_RIGHT)} icon="right_arrow"/> : null}
               </div>

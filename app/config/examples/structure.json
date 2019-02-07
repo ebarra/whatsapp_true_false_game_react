@@ -1,0 +1,17 @@
+{
+  "mailContent": {
+    "image": {"alignment": "", "href": ""},
+    "paragraph":  {
+      "text_01": "",
+      "link": {"text": "", "href": ""},
+      "text_02": ""
+    }
+  },
+  "whatsappContent": {
+    "text_01": "",
+    "image_01": "",
+    "text_02": "",
+    "image_02": "",
+    "image_03": ""
+  }
+}
