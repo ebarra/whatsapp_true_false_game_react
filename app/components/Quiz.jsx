@@ -109,11 +109,12 @@ export default class Quiz extends React.Component {
             </div>
             <div className={"question_box " + (show_feedback ? "with_feedback" : "") }>
               <div className="mailList">
+                <div className="inbox"><span className="fa fa-envelope icon"></span> Bandeja de recibidos</div>
                 <ul>
-                  {questions.map((q, idx) => <MailItem dispatch={this.props.dispatch} key={q.subject} subject={q.subject} preview={q.preview} mailer={q.mailer} date={q.date} isActive={idx === this.props.index} idx={idx} />)}
+                  {questions.map((q, idx) => <MailItem dispatch={this.props.dispatch} key={idx} subject={q.subject} preview={q.preview} mailer={q.mailer} date={q.date} isActive={idx === this.props.index} idx={idx} />)}
                 </ul>
               </div>
-              <MailDetail subject={question.subject} preview={question.preview} mailer={question.mailer} date={question.date} mailContent={question.mailContent}/>
+              <MailDetail subject={question.subject} preview={question.preview} mailer={question.mailer} date={question.date} mailContent={question.mailContent} idx={this.props.index} />
             </div>
           </div>
       );

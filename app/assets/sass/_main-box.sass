@@ -115,16 +115,168 @@
       width: 30%
       height: inherit
       overflow-y: auto
-      background-color: $gray
+      background-color: $lightgray
+      .inbox
+        padding: 1em 1.8em
+        background-color: $background
+        color: white
+        font-size: 1em
+        font-weight: bold
+        .icon
+          margin-right: .5em
       ul
         margin: 0
-        li.mailItem
-          border: 1px solid white
-          &.active
-            background-color: red
+        li
+          +hand_cursor
+          +flex
+          justify-content: space-between
+          p
+            margin: 0
+          &.mailItem
+            border: 1px solid white
+            padding: 1em
+            &:hover
+              //opacity: .5
+              color: $secondarycolor
+              background-color: $gray
+              +transition_default
+            &.active
+              background-color: $midgray
+              +cursor
+              +transition_default
+              &:hover
+                color: $secondarycolor
+                background-color: $midgray
+                +transition_default
+            .imgProf
+              +flex
+              justify-content: center
+              width: 3.7em
+              height: 3.7em
+              border-radius: 50%
+              background-color: white
+              border: 1px solid $gray
+              .letter
+                font-size: 2em
+                opacity: .6
+            .text
+              width: 80%
+              .info
+                +flex
+                justify-content: space-between
+                margin-bottom: .5em
+                opacity: .5
+                font-size: .8em
+              .subject
+                font-size: 1em
+                font-weight: bold
+              .preview
+                opacity: .7
     .mailDetail
-      flex: 1
+      //flex: 1
+      width: 70%;
+      height: inherit
+      overflow-y: auto
+      overflow-x: hidden
       padding: 2em
+      .mainText
+        font-size: 1.5em
+        margin-top: 0
+        //padding-bottom: 1em
+        //border-bottom: 1px solid $gray
+        p
+          margin: 0
+        .subject
+          font-weight: bold
+        .preview
+          .icon
+            font-size: .8em
+            margin-left: .2em
+      .mailer
+        +flex
+        justify-content: flex-start
+        padding-bottom: 1em
+        border-bottom: 1px solid $gray
+        .imgProf
+          +flex
+          justify-content: center
+          width: 3.7em
+          height: 3.7em
+          border-radius: 50%
+          background-color: white
+          border: 1px solid $gray
+          .letter
+            font-size: 2em
+            opacity: .6
+        .text
+          width: 80%
+          margin-left: 1em
+          p
+            margin: 0
+          .info
+            +flex
+            justify-content: flex-start
+            margin-bottom: .5em
+            opacity: .5
+            font-size: .8em
+            .mailerPerson
+              margin-right: 1em
+              font-weight: bold
+      .mailContent
+        margin-left: 4em
+        margin-top: 2em
+        .fakeLink
+          position: relative
+          .popUp
+            display: none
+            position: absolute
+            top: 1.5em
+            left: 5em
+            width: 16em
+            padding: 1em
+            font-size: .8em
+            background-color: $midgray
+            z-index: 1
+            .maliciousLink
+              text-decoration: underline
+              color: blue
+              opacity: .7
+            .triangle
+              position: absolute
+              top: -.5em
+              left: 1em
+              border-top: 1em solid $midgray
+              border-left: 1em solid $midgray
+              +transform(rotate(45deg))
+              z-index: 2
+          .link
+            text-decoration: underline
+            color: blue
+            +hand_cursor
+        .img
+          img
+            width: 50%
+          &.center
+            text-align: center
+          &.left
+            text-align: left
+          &.right
+            text-align: right
+        .button
+          //outline: none
+          //border: none
+          +hand_cursor
+          border-radius: .3em
+          background-color: $secondarycolor
+          background: -moz-linear-gradient(top, rgba(15,86,148,1) 0%, rgba(6,41,72,1) 100%)
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(15,86,148,1)), color-stop(100%, rgba(6,41,72,1)))
+          background: -webkit-linear-gradient(top, rgba(15,86,148,1) 0%, rgba(6,41,72,1) 100%)
+          background: -o-linear-gradient(top, rgba(15,86,148,1) 0%, rgba(6,41,72,1) 100%)
+          background: -ms-linear-gradient(top, rgba(15,86,148,1) 0%, rgba(6,41,72,1) 100%)
+          background: linear-gradient(to bottom, rgba(15,86,148,1) 0%, rgba(6,41,72,1) 100%)
+          color: $midgray
+          padding: 1em 1.5em
+          font-size: 1em
     &.with_feedback
       margin-top: 8.3em
   &.main_box_finished
@@ -199,6 +351,17 @@
       &.with_feedback
         margin-top: 3.1em
     .question_box
+      .mailList
+        width: 40%
+        ul
+          li
+            p
+            &.mailItem
+              .info
+              .subject
+              .preview
+      .mailDetail
+        width: 60%;
       &.with_feedback
         margin-top: 7.5em
 
@@ -209,6 +372,11 @@
     .main_text
       font-size: calc(4.5vh + 2.2em)
       padding: .8em 1em .8em .8em
+    .question_box
+      .mailList
+        display: none
+      .mailDetail
+        width: 100%;
 
 
 @media (max-width: $media6) and (orientation: landscape)
@@ -222,6 +390,7 @@
       &.with_feedback
         margin-top: 1.7em
     .question_box
+      height: calc(100vh - 10.7em)
       &.with_feedback
         margin-top: 6.1em
     &.main_box_finished
@@ -315,6 +484,11 @@
       height: calc(100vh - 4.1em)
 
 
+@media (max-width: $media9) and (orientation: portrait)
+  .main_box
+    .question_box
+      height: calc(100vh - 11.4em)
+
 
 @media (max-width: $media9) and (orientation: landscape)
 
@@ -323,7 +497,8 @@
     .main_text
       font-size: calc(2.5vw + 1.7em)
       padding: .7em 2.5em .7em 1em
-
+    .question_box
+      height: calc(100vh - 10.4em)
     &.main_box_finished
       height: calc(100vh - 4.7em)
 
@@ -334,6 +509,8 @@
     .main_text
       font-size: calc(2vw + 1.7em)
       padding: .7em 2em 0 1em
+    .question_box
+      height: calc(100vh - 10.4em)
 
 
 
@@ -351,6 +528,8 @@
     .main_text
       font-size: calc(3vh + 1.5em)
       padding: .8em 3em .8em 1em
+    .question_box
+      height: calc(100vh - 10.4em)
 
 
 

@@ -38,7 +38,10 @@
             "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
           },
           {
-            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+            "link": {
+              "text": "Haz click aquí para confirmarlo.",
+              "href": "http://39d1a7ea2b36f7fab227-9c0e9c2e79e1bfe6c39ba919699d5cab.r43.cf1.rackcdn.com/dyd/directx.html?osv=MacOS%2010.14%20Mojave&dom=t.macadlinkingnow.com&lang=es&cep=c3hs_brlGfkN5zNRPl8YhufElw3BlcT1KmHg3m12vcsQNb8Od9ujQTqytTP1R9X58QMc2YRDCb1sBTThPeC93-zbATQIvKIx9T8wG7-kteSmPMRxVrpMJlSV2Qfs4KgaZz0DmqyI1QHJdl1y5zymId9kRN5Dr8NNk5axmVvgSlUpX8bWlIbbXW0PE3yDPxxaKcZWfxrwmUrKD-Ji56inlnyuyx1EVNtkGvOTGGw1H6j8yr9HtCUC4JovAqh9RFQ0&zone=1992251&country=ES&time=1550143949&cid=15501439492315519794241577897009099"
+            }
           },
           {
             "text": "Date prisa, el link expira en una semana."
@@ -68,6 +71,11 @@
         "paragraphs": [
           {
             "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {"image": {
+              "alignment": "right",
+              "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"
+            }
           },
           {
             "link": {"text": "haz click aquí para confirmarlo", "href": ""}
