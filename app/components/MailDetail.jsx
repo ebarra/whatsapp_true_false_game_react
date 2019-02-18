@@ -34,7 +34,7 @@ export default class MailDetail extends React.Component {
             </div>
           </div>
           <div className="mailContent">
-            <div className={"img " + mailContent.image.alignment}><img src={mailContent.image.href} alt="main_logo"/></div>
+            <div className={"img " + mailContent.image.alignment}><img style={{width:mailContent.image.size + "%"}} src={mailContent.image.href} alt="main_logo"/></div>
             {mailContent.paragraphs.map((p, i) => {
               return [p.text ? <p className="text" key={"text" + i}>{p.text}</p> : null,
                 p.link ?
@@ -62,7 +62,7 @@ export default class MailDetail extends React.Component {
                     </div>
                   </div>
                 : null,
-                p.image ? <div key={"img" + i} className={"img " + p.image.alignment}><img src={p.image.href} alt={p.image.href}/></div> : null];
+                p.image ? <div key={"img" + i} className={"img " + p.image.alignment}><img style={{width:p.image.size + "%"}} src={p.image.href} alt={p.image.href}/></div> : null];
             }
             )}
           </div>

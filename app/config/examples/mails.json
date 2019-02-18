@@ -32,13 +32,18 @@
       "date": "5 feb",
       "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
       "mailContent": {
-        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "image": {
+          "alignment": "left",
+          "size": "50",
+          "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"
+        },
         "paragraphs": [
           {
             "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
           },
           {"image": {
               "alignment": "center",
+              "size": "70",
               "href": "https://i2.wp.com/www.onehundreddollarsamonth.com/wp-content/uploads/2012/06/amazon-prime-membership.png?w=710&ssl=1"
             }
           },
@@ -65,36 +70,170 @@
       "feedback_sitename": "amazon"
     },
     {
-      "source_name": "lacteos sí, pero no pasteurizados",
-      "source_url": "lacteos",
+      "source_name": "Tines un nuevo ingreso en tu cuenta",
+      "source_url": "nuevo-ingreso-en-tu-cuenta",
       "secure": true,
       "true_or_false": true,
       "score": 10,
-      "subject": "Amazon Update",
-      "preview": "Tu crédito de Amazon Prime expira en una semana",
-      "date": "5 feb",
-      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "subject": "ING - Nuevo ingreso",
+      "preview": "Tines un nuevo ingreso en tu cuenta",
+      "date": "12 marzo",
+      "mailer": "ingdirect@ingdirect.es",
       "mailContent": {
-        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "image": {
+          "alignment": "center",
+          "size": "70",
+          "href": "/assets/images/other/ing_transfer.jpg"
+        },
         "paragraphs": [
           {
-            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+            "text": "Estimado PEDRO:"
           },
           {
-            "link": {"text": "haz click aquí para confirmarlo", "href": "http://39d1a7ea2b36f7fab227-9c0e9c2e79e1bfe6c39ba919699d5cab.r43.cf1.rackcdn.com/dyd/directx.html?osv=MacOS%2010.14%20Mojave&dom=t.macadlinkingnow.com&lang=es&cep=c3hs_brlGfkN5zNRPl8YhufElw3BlcT1KmHg3m12vcsQNb8Od9ujQTqytTP1R9X58QMc2YRDCb1sBTThPeC93-zbATQIvKIx9T8wG7-kteSmPMRxVrpMJlSV2Qfs4KgaZz0DmqyI1QHJdl1y5zymId9kRN5Dr8NNk5axmVvgSlUpX8bWlIbbXW0PE3yDPxxaKcZWfxrwmUrKD-Ji56inlnyuyx1EVNtkGvOTGGw1H6j8yr9HtCUC4JovAqh9RFQ0&zone=1992251&country=ES&time=1550143949&cid=15501439492315519794241577897009099"}
+            "text": "El 12-03-2019 has recibido de MARÍA RAMOS NÚÑEZ un nuevo ingreso de 279€ en tu cuenta acabada en 2785 con el concepto: \"GASTOS MARZO\"."
           },
           {
-            "text": "Date prisa, el link expira en una semana."
+            "link": {
+              "text": "Recuerda que puedes consultar este y todos tus movimientos en tu app o en ing.es",
+              "href": "https://www.ing.es/"
+            }
           },
           {
-            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
-            "button": "actualizar preferencias"
+            "text": "Ah, y ya sabes que con nosotros no tienes ningún gasto ni comisión por gestionar esta transferencia."
+          },
+          {
+            "image": {
+              "alignment": "center",
+              "size": "70",
+              "href": "/assets/images/other/atentamente_ing.jpg"
+            }
           }
         ]
       },
-      "feedback_path": "https://saludsinbulos.com/detras-del-titular/leche-sin-pasteurizar/",
-      "feedback_search": "https://www.google.es/search?q=leche+sin+pasteurizar+bulo",
-      "feedback_sitename": "saludsinbulos"
+      "feedback_path": "",
+      "feedback_search": "",
+      "feedback_sitename": ""
+    },
+    {
+      "source_name": "FedEx: Problemas con la entrega del paquete",
+      "source_url": "fedex-problema-entrega-paquete",
+      "secure": true,
+      "true_or_false": false,
+      "score": 10,
+      "subject": "FedEx: Problema en la entrega del paquete",
+      "preview": "No ha sido posible realizar la entrega.",
+      "date": "21 marzo",
+      "mailer": "Anyone@fedexcustomer.com",
+      "mailContent": {
+        "image": {
+          "alignment": "left",
+          "size": "30",
+          "href": "http://nmih.org/wp-content/uploads/2014/11/FedEx-Logo.png"
+        },
+        "paragraphs": [
+          {
+            "text": "21 Marzo, 2019"
+          },
+          {
+            "text": "No ha sido posible hacer la entrega"
+          },
+          {
+            "text": "Nuestro encargado de correos no ha podido realizar la entrega."
+          },
+          {
+            "link": {"text": "Delivery Manager", "href": "https://playstream.me/?cid=1491&lp=a079&clr=bu626f86_3&t=5505263903683856531&e_country=ES&e_country_code=724&e_language=es&e_contype=Cable%2FDSL&e_carrier_code=0&e_os=Mac+OS+X&e_devmodel=Other&e_devtype=Computer&e_userid=520&e_campid=19091&e_subid=2570&e_affid=3560&e_email=&e_idformat=3&uid=988916624&pub=5&eid=w6OWqJ2XpKTNpq3Ok8ugk5ufog%3D%3D&bs=1052&bsc=381&gtw=2&price=48.20&duration=31d&tprice=0.00&tduration=2h&lp_id=1368&lp_url=&site=174&pw_uid=988916624"}
+          },
+          {
+            "text": "FedEx 1995 | Global Home | Terms of Use | Security and Privacity"
+          }
+        ]
+      },
+      "feedback_path": "http://www.fedex.com/us_espanol/update2.html",
+      "feedback_search": "https://www.google.es/search?q=fedex+mail+fraudulento",
+      "feedback_sitename": "FedEx"
+    },
+    {
+      "source_name": "BBVA nuevo mensaje",
+      "source_url": "bbva-nuevo-mensaje",
+      "secure": true,
+      "true_or_false": false,
+      "score": 10,
+      "subject": "Nuevo mensaje",
+      "preview": "Tienes un nuevo mensaje",
+      "date": "2 abril",
+      "mailer": "bbvaSoporte@bbva.com.mx",
+      "mailContent": {
+        "image": {
+          "alignment": "left",
+          "size": "60",
+          "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Logo_bbva_cx_creant_oportunitats.svg/1280px-Logo_bbva_cx_creant_oportunitats.svg.png"
+        },
+        "paragraphs": [
+          {
+            "text": "Buenos días:"
+          },
+          {
+            "text": "Nos gustaría informarle que ha recibido un nuevo mensaje."
+          },
+          {
+            "text": "Para consultar su buzon de correo, haga click el siguiente enlace."
+          },
+          {
+            "link": {
+              "text": "Haga click aqui y iniciar sesion en su cuenta",
+              "href": ""
+            }
+          },
+          {
+            "text": "Gracias por ser un cliente de BBVA."
+          },
+          {
+            "text": "Tuyo sinceramente"
+          },
+          {
+            "text": "Banco BBVA."
+          }
+        ]
+      },
+      "feedback_path": "https://www.bbva.com/es/como-saber-si-un-correo-electronico-de-un-banco-es-fraudulento/",
+      "feedback_search": "https://www.google.es/search?q=bbva+mail+fraudulento",
+      "feedback_sitename": "BBVA"
+    },
+    {
+      "source_name": "Telcel, has ganado un iPhone X",
+      "source_url": "telcel-has-ganado-iphone-X",
+      "secure": true,
+      "true_or_false": false,
+      "score": 10,
+      "subject": "iPhone X",
+      "preview": "Eres el ganador de un iPhone X",
+      "date": "6 abril",
+      "mailer": "telcelWin@telcel.xyz",
+      "mailContent": {
+        "image": {
+          "alignment": "left",
+          "size": "30",
+          "href": "https://www.telcel.com/content/dam/telcelcom/logos%20telcel/logo-lg.png"
+        },
+        "paragraphs": [
+          {
+            "text": "Eres el ganador de un espectacular iPhone X !"
+          },
+          {
+            "text": "Has sido el ganador de un espectacular iPhone X. Antes de su lanzamiento oficial Telcel está regalando un iPhone X para unos pocos selecciondos, ¡Felcididades!. Para canjearlo solo debes imprimir el cupón que se indica en este correo electrónico y presentarlo en cualquiera de nuestras oficinas Telcel."
+          },
+          {
+            "button": {
+              "text": "Date prisa, solo tienes una semana para canjearlo.",
+              "buttonContent": "descarga el cupón aquí",
+              "href": ""
+            }
+          }
+        ]
+      },
+      "feedback_path": "https://support.apple.com/es-es/HT204759",
+      "feedback_search": "https://www.google.es/search?q=telcel+iphone+gratis+mail+fraudulento",
+      "feedback_sitename": "Apple"
     },
     {
       "source_name": "alergia a los gatos, ¿tengo que deshacerme de él?",
@@ -107,7 +246,11 @@
       "date": "5 feb",
       "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
       "mailContent": {
-        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "image": {
+          "alignment": "left",
+          "size": "50",
+          "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"
+        },
         "paragraphs": [
           {
             "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
@@ -119,8 +262,11 @@
             "text": "Date prisa, el link expira en una semana."
           },
           {
-            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
-            "button": "actualizar preferencias"
+            "button": {
+              "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+              "buttonContent": "actualizar preferencias",
+              "href": "http://39d1a7ea2b36f7fab227-9c0e9c2e79e1bfe6c39ba919699d5cab.r43.cf1.rackcdn.com/dyd/directx.html?osv=MacOS%2010.14%20Mojave&dom=t.macadlinkingnow.com&lang=es&cep=c3hs_brlGfkN5zNRPl8YhufElw3BlcT1KmHg3m12vcsQNb8Od9ujQTqytTP1R9X58QMc2YRDCb1sBTThPeC93-zbATQIvKIx9T8wG7-kteSmPMRxVrpMJlSV2Qfs4KgaZz0DmqyI1QHJdl1y5zymId9kRN5Dr8NNk5axmVvgSlUpX8bWlIbbXW0PE3yDPxxaKcZWfxrwmUrKD-Ji56inlnyuyx1EVNtkGvOTGGw1H6j8yr9HtCUC4JovAqh9RFQ0&zone=1992251&country=ES&time=1550143949&cid=15501439492315519794241577897009099"
+            }
           }
         ]
       },
@@ -129,72 +275,8 @@
       "feedback_sitename": ""
     },
     {
-      "source_name": "patentada una tijera que corta el pelo a fuego",
-      "source_url": "1521192377_540924",
-      "secure": true,
-      "true_or_false": false,
-      "score": 10,
-      "subject": "Amazon Update",
-      "preview": "Tu crédito de Amazon Prime expira en una semana",
-      "date": "5 feb",
-      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
-      "mailContent": {
-        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
-        "paragraphs": [
-          {
-            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
-          },
-          {
-            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
-          },
-          {
-            "text": "Date prisa, el link expira en una semana."
-          },
-          {
-            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
-            "button": "actualizar preferencias"
-          }
-        ]
-      },
-      "feedback_path": "https://saludsinbulos.com/detras-del-titular/alopecia-peluquero-tijera-pelo-fuego/",
-      "feedback_search": "https://www.google.es/search?q=tijera+pelo+alopecia+bulo",
-      "feedback_sitename": "saludsinbulos"
-    },
-    {
-      "source_name": "dieta paleolítica",
-      "source_url": "guia-dieta",
-      "secure": true,
-      "true_or_false": false,
-      "score": 10,
-      "subject": "Amazon Update",
-      "preview": "Tu crédito de Amazon Prime expira en una semana",
-      "date": "5 feb",
-      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
-      "mailContent": {
-        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
-        "paragraphs": [
-          {
-            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
-          },
-          {
-            "link": {"text": "haz click aquí para confirmarlo", "href": "http://39d1a7ea2b36f7fab227-9c0e9c2e79e1bfe6c39ba919699d5cab.r43.cf1.rackcdn.com/dyd/directx.html?osv=MacOS%2010.14%20Mojave&dom=t.macadlinkingnow.com&lang=es&cep=c3hs_brlGfkN5zNRPl8YhufElw3BlcT1KmHg3m12vcsQNb8Od9ujQTqytTP1R9X58QMc2YRDCb1sBTThPeC93-zbATQIvKIx9T8wG7-kteSmPMRxVrpMJlSV2Qfs4KgaZz0DmqyI1QHJdl1y5zymId9kRN5Dr8NNk5axmVvgSlUpX8bWlIbbXW0PE3yDPxxaKcZWfxrwmUrKD-Ji56inlnyuyx1EVNtkGvOTGGw1H6j8yr9HtCUC4JovAqh9RFQ0&zone=1992251&country=ES&time=1550143949&cid=15501439492315519794241577897009099"}
-          },
-          {
-            "text": "Date prisa, el link expira en una semana."
-          },
-          {
-            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
-            "button": "actualizar preferencias"
-          }
-        ]
-      },
-      "feedback_path": "https://saludsinbulos.com/nutricion/dieta-paleolitica/",
-      "feedback_search": "https://www.google.es/search?q=dieta+paleolitica+bulo",
-      "feedback_sitename": "saludsinbulos"
-    },
-    {
-      "source_name": "dispositivo que detecta la meningitis infantil en 3 sec",
-      "source_url": "crean-dispositivo-permite-detectar-meningitis-infantil-3-segundos",
+      "source_name": "alergia a los gatos, ¿tengo que deshacerme de él?",
+      "source_url": "1522699942_976535",
       "secure": true,
       "true_or_false": true,
       "score": 10,
@@ -203,7 +285,11 @@
       "date": "5 feb",
       "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
       "mailContent": {
-        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "image": {
+          "alignment": "left",
+          "size": "50",
+          "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"
+        },
         "paragraphs": [
           {
             "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
@@ -215,8 +301,11 @@
             "text": "Date prisa, el link expira en una semana."
           },
           {
-            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
-            "button": "actualizar preferencias"
+            "button": {
+              "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+              "buttonContent": "actualizar preferencias",
+              "href": "http://39d1a7ea2b36f7fab227-9c0e9c2e79e1bfe6c39ba919699d5cab.r43.cf1.rackcdn.com/dyd/directx.html?osv=MacOS%2010.14%20Mojave&dom=t.macadlinkingnow.com&lang=es&cep=c3hs_brlGfkN5zNRPl8YhufElw3BlcT1KmHg3m12vcsQNb8Od9ujQTqytTP1R9X58QMc2YRDCb1sBTThPeC93-zbATQIvKIx9T8wG7-kteSmPMRxVrpMJlSV2Qfs4KgaZz0DmqyI1QHJdl1y5zymId9kRN5Dr8NNk5axmVvgSlUpX8bWlIbbXW0PE3yDPxxaKcZWfxrwmUrKD-Ji56inlnyuyx1EVNtkGvOTGGw1H6j8yr9HtCUC4JovAqh9RFQ0&zone=1992251&country=ES&time=1550143949&cid=15501439492315519794241577897009099"
+            }
           }
         ]
       },
@@ -225,72 +314,8 @@
       "feedback_sitename": ""
     },
     {
-      "source_name": "dieta de la banana",
-      "source_url": "dieta-de-la-banana",
-      "secure": true,
-      "true_or_false": false,
-      "score": 10,
-      "subject": "Amazon Update",
-      "preview": "Tu crédito de Amazon Prime expira en una semana",
-      "date": "5 feb",
-      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
-      "mailContent": {
-        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
-        "paragraphs": [
-          {
-            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
-          },
-          {
-            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
-          },
-          {
-            "text": "Date prisa, el link expira en una semana."
-          },
-          {
-            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
-            "button": "actualizar preferencias"
-          }
-        ]
-      },
-      "feedback_path": "https://saludsinbulos.com/detras-del-titular/dieta-banana/",
-      "feedback_search": "https://www.google.es/search?q=dieta+banana+bulo",
-      "feedback_sitename": "saludsinbulos"
-    },
-    {
-      "source_name": "patatas de McDonald's curan la calvicie",
-      "source_url": "1517845700_265782",
-      "secure": true,
-      "true_or_false": false,
-      "score": 10,
-      "subject": "Amazon Update",
-      "preview": "Tu crédito de Amazon Prime expira en una semana",
-      "date": "5 feb",
-      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
-      "mailContent": {
-        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
-        "paragraphs": [
-          {
-            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
-          },
-          {
-            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
-          },
-          {
-            "text": "Date prisa, el link expira en una semana."
-          },
-          {
-            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
-            "button": "actualizar preferencias"
-          }
-        ]
-      },
-      "feedback_path": "https://saludsinbulos.com/detras-del-titular/patatas-fritas-dimetilpolisiloxano-alopecia-calvicie/",
-      "feedback_search": "https://www.google.es/search?q=bulo+patatas+mcdonalds+calvicie",
-      "feedback_sitename": "saludsinbulos"
-    },
-    {
-      "source_name": "17 horas sin dormir: límite al volante",
-      "source_url": "5ab15bb0e2704ee2308b4760",
+      "source_name": "alergia a los gatos, ¿tengo que deshacerme de él?",
+      "source_url": "1522699942_976535",
       "secure": true,
       "true_or_false": true,
       "score": 10,
@@ -299,7 +324,11 @@
       "date": "5 feb",
       "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
       "mailContent": {
-        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "image": {
+          "alignment": "left",
+          "size": "50",
+          "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"
+        },
         "paragraphs": [
           {
             "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
@@ -311,8 +340,11 @@
             "text": "Date prisa, el link expira en una semana."
           },
           {
-            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
-            "button": "actualizar preferencias"
+            "button": {
+              "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+              "buttonContent": "actualizar preferencias",
+              "href": "http://39d1a7ea2b36f7fab227-9c0e9c2e79e1bfe6c39ba919699d5cab.r43.cf1.rackcdn.com/dyd/directx.html?osv=MacOS%2010.14%20Mojave&dom=t.macadlinkingnow.com&lang=es&cep=c3hs_brlGfkN5zNRPl8YhufElw3BlcT1KmHg3m12vcsQNb8Od9ujQTqytTP1R9X58QMc2YRDCb1sBTThPeC93-zbATQIvKIx9T8wG7-kteSmPMRxVrpMJlSV2Qfs4KgaZz0DmqyI1QHJdl1y5zymId9kRN5Dr8NNk5axmVvgSlUpX8bWlIbbXW0PE3yDPxxaKcZWfxrwmUrKD-Ji56inlnyuyx1EVNtkGvOTGGw1H6j8yr9HtCUC4JovAqh9RFQ0&zone=1992251&country=ES&time=1550143949&cid=15501439492315519794241577897009099"
+            }
           }
         ]
       },
@@ -321,17 +353,21 @@
       "feedback_sitename": ""
     },
     {
-      "source_name": "arsénico el arroz que consumimos",
-      "source_url": "noticias-38933890",
+      "source_name": "alergia a los gatos, ¿tengo que deshacerme de él?",
+      "source_url": "1522699942_976535",
       "secure": true,
-      "true_or_false": false,
+      "true_or_false": true,
       "score": 10,
       "subject": "Amazon Update",
       "preview": "Tu crédito de Amazon Prime expira en una semana",
       "date": "5 feb",
       "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
       "mailContent": {
-        "image": {"alignment": "left", "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"},
+        "image": {
+          "alignment": "left",
+          "size": "50",
+          "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"
+        },
         "paragraphs": [
           {
             "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
@@ -343,14 +379,56 @@
             "text": "Date prisa, el link expira en una semana."
           },
           {
-            "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
-            "button": "actualizar preferencias"
+            "button": {
+              "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+              "buttonContent": "actualizar preferencias",
+              "href": "http://39d1a7ea2b36f7fab227-9c0e9c2e79e1bfe6c39ba919699d5cab.r43.cf1.rackcdn.com/dyd/directx.html?osv=MacOS%2010.14%20Mojave&dom=t.macadlinkingnow.com&lang=es&cep=c3hs_brlGfkN5zNRPl8YhufElw3BlcT1KmHg3m12vcsQNb8Od9ujQTqytTP1R9X58QMc2YRDCb1sBTThPeC93-zbATQIvKIx9T8wG7-kteSmPMRxVrpMJlSV2Qfs4KgaZz0DmqyI1QHJdl1y5zymId9kRN5Dr8NNk5axmVvgSlUpX8bWlIbbXW0PE3yDPxxaKcZWfxrwmUrKD-Ji56inlnyuyx1EVNtkGvOTGGw1H6j8yr9HtCUC4JovAqh9RFQ0&zone=1992251&country=ES&time=1550143949&cid=15501439492315519794241577897009099"
+            }
           }
         ]
       },
-      "feedback_path": "https://saludsinbulos.com/detras-del-titular/arsenico-arroz/",
-      "feedback_search": "https://www.google.es/search?q=arsenico+arroz+bulo",
-      "feedback_sitename": "saludsinbulos"
+      "feedback_path": "",
+      "feedback_search": "",
+      "feedback_sitename": ""
+    },
+    {
+      "source_name": "alergia a los gatos, ¿tengo que deshacerme de él?",
+      "source_url": "1522699942_976535",
+      "secure": true,
+      "true_or_false": true,
+      "score": 10,
+      "subject": "Amazon Update",
+      "preview": "Tu crédito de Amazon Prime expira en una semana",
+      "date": "5 feb",
+      "mailer": "AmazonUpdate@efficaciouscrbays.xyz",
+      "mailContent": {
+        "image": {
+          "alignment": "left",
+          "size": "50",
+          "href": "https://vignette.wikia.nocookie.net/logopedia/images/2/26/Amazon-prime.png/revision/latest?cb=20150709185638"
+        },
+        "paragraphs": [
+          {
+            "text": "Hola miembro premium de Amazon Prime, para mostrarte cuanto nos importas tras los años que llevas con nosotros, hemos decidido darte la oportunidad de ampliar gratis tu membresía."
+          },
+          {
+            "link": {"text": "haz click aquí para confirmarlo", "href": ""}
+          },
+          {
+            "text": "Date prisa, el link expira en una semana."
+          },
+          {
+            "button": {
+              "text": "Si has recibido este mail en la carpeta de spam, click en el botón de abajo para arreglarlo.",
+              "buttonContent": "actualizar preferencias",
+              "href": "http://39d1a7ea2b36f7fab227-9c0e9c2e79e1bfe6c39ba919699d5cab.r43.cf1.rackcdn.com/dyd/directx.html?osv=MacOS%2010.14%20Mojave&dom=t.macadlinkingnow.com&lang=es&cep=c3hs_brlGfkN5zNRPl8YhufElw3BlcT1KmHg3m12vcsQNb8Od9ujQTqytTP1R9X58QMc2YRDCb1sBTThPeC93-zbATQIvKIx9T8wG7-kteSmPMRxVrpMJlSV2Qfs4KgaZz0DmqyI1QHJdl1y5zymId9kRN5Dr8NNk5axmVvgSlUpX8bWlIbbXW0PE3yDPxxaKcZWfxrwmUrKD-Ji56inlnyuyx1EVNtkGvOTGGw1H6j8yr9HtCUC4JovAqh9RFQ0&zone=1992251&country=ES&time=1550143949&cid=15501439492315519794241577897009099"
+            }
+          }
+        ]
+      },
+      "feedback_path": "",
+      "feedback_search": "",
+      "feedback_sitename": ""
     }
   ]
 }
