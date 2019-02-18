@@ -40,7 +40,7 @@
   z-index: 1
   text-align: right
   padding: .2em .7em
-  font-size: 2.5em
+  font-size: 2.6em
   font-weight: bold
   position: fixed
   width: 95%
@@ -56,11 +56,11 @@
 
 .feedback_iframe
   position: absolute
-  top: 9.3em
-  z-index: 1
+  top: 9.5em
+  z-index: 100
   width: 95%
   //margin: 0 auto
-  height: calc(100vh - 18.35em)
+  height: calc(100vh - 18.6em)
   background-color: rgba(255, 255, 255,.85)
   color: black
   @include flex
@@ -159,7 +159,7 @@
       height: 4.45em
 
 
-@media (max-width: $media6) and (orientation: landscape) 
+@media (max-width: $media6) and (orientation: landscape)
 
   .feedback-box
     height: calc(100vh - 8.3em)
@@ -186,7 +186,7 @@
       height: 4.45em
 
 
-@media (max-width: 880px) and (orientation: landscape) 
+@media (max-width: 880px) and (orientation: landscape)
   .feedback_iframe
     top: 5.1em
     height: calc(100vh - 10em)
@@ -236,7 +236,7 @@
     font-size: 1.1em
 
   .feedback_iframe
-    top: 5em
+    top: 5.4em
     height: calc(100vh - 10.75em)
 
 
@@ -249,12 +249,12 @@
     text-align: right
 
   .feedback_iframe
-    top: 5em
+    top: 5.4em
     height: calc(100vh - 9.75em)
     .feedback_i_content
       font-size: calc(.6vh + .6vw + .4em)
     &.redux
-      height: 2.3em 
+      height: 2.3em
 
 
 
@@ -270,7 +270,7 @@
 
   .feedback_header
     text-align: center
-  
+
   .feedback_iframe
     &.redux
       height: 2.3em
@@ -281,5 +281,3 @@
   .feedback_iframe
     .feedback_i_content
       font-size: calc(1vh + 1vw + .4em)
-
-

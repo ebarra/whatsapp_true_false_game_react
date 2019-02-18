@@ -5,7 +5,7 @@
 .main_box
   height: calc(100vh - 14.5em)
   background-color: white
-  overflow: auto
+  overflow: hidden
   color: $secondarycolor
   .main_text
     color: $secondarycolor
@@ -225,6 +225,9 @@
       .mailContent
         margin-left: 4em
         margin-top: 2em
+        .buttonBox
+          .textButtonBox
+            margin-top: 2em
         .fakeLink
           position: relative
           .popUp
@@ -235,7 +238,7 @@
             width: 16em
             padding: 1em
             font-size: .8em
-            background-color: $midgray
+            background-color: $lightgray
             z-index: 1
             .maliciousLink
               text-decoration: underline
@@ -245,14 +248,18 @@
               position: absolute
               top: -.5em
               left: 1em
-              border-top: 1em solid $midgray
-              border-left: 1em solid $midgray
+              border-top: 1em solid $lightgray
+              border-left: 1em solid $lightgray
               +transform(rotate(45deg))
               z-index: 2
           .link
             text-decoration: underline
             color: blue
             +hand_cursor
+          &.buttonLink
+            .popUp
+              top: 3em
+              margin-bottom: 1em
         .img
           img
             width: 50%
@@ -388,7 +395,7 @@
       padding: .8em 3em .8em 1em
     .nav_box
       &.with_feedback
-        margin-top: 1.7em
+        margin-top: 1.6em
     .question_box
       height: calc(100vh - 10.7em)
       &.with_feedback

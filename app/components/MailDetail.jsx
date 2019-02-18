@@ -5,20 +5,25 @@ export default class MailDetail extends React.Component {
     super(props);
     this.state = {};
   }
-  handlePopUp(i) {
-    this.setState({popup: this.state.popup === i ? undefined : i})
+  handlePopUp(i){
+    this.setState({popup:this.state.popup === i ? undefined : i});
+  }
+  componentWillReceiveProps(nextProps){
+    if(this.props.idx !== nextProps.idx){
+      this.setState({popup:undefined});
+    }
   }
   render(){
     const {subject, preview, mailer, date, mailContent} = this.props;
     return (
         <div className="mailDetail">
           <div className="header">
-            <p className="mainText">
+            <div className="mainText">
               <p className="subject">{subject}: </p>
               <p className="preview">{preview} <span className="icon fa fa-sign-out"></span></p>
-            </p>
+            </div>
             <div className="mailer">
-              <div className="imgProf"> <span className="letter">{mailer[0]}</span> </div>
+              <div className="imgProf"> <span className="letter">{mailer[0]}</span></div>
               <div className="text">
                 <p className="info">
                   <span className="mailerPerson">{mailer.split("@")[0]}</span>
@@ -37,13 +42,26 @@ export default class MailDetail extends React.Component {
                     <p className="link" onClick={()=>{this.handlePopUp(i)}} >{p.link.text}</p>
                     <p className="popUp" style={{display: this.state.popup === i ? 'block' : 'none'}}>
                       <span className="triangle"></span>
-                      <span className="text"> Este link te llevaría a:</span>
+                      <span className="text">Este link te llevaría a:</span>
                       <br/>
                       <span className="maliciousLink">{truncate(p.link.href, {'length': 55})}</span>
                     </p>
                   </div>
                   : null,
-                p.button ? <button className="button" key={"button" + i}>{p.button}</button> : null,
+                p.button ?
+                  <div className="buttonBox" key={"button" + i}>
+                    <p className="textButtonBox">{p.button.text}</p>
+                    <div className="fakeLink buttonLink" key={"button" + i}>
+                      <button className="button" onClick={()=>{this.handlePopUp(i)}} >{p.button.buttonContent}</button>
+                      <p className="popUp" style={{display:this.state.popup === i ? 'block' : 'none'}}>
+                        <span className="triangle"/>
+                        <span className="text">Este link te llevaría a:</span>
+                        <br/>
+                        <span className="maliciousLink">{truncate(p.button.href, {'length':55})}</span>
+                      </p>
+                    </div>
+                  </div>
+                : null,
                 p.image ? <div key={"img" + i} className={"img " + p.image.alignment}><img src={p.image.href} alt={p.image.href}/></div> : null];
             }
             )}
@@ -59,11 +77,5 @@ export default class MailDetail extends React.Component {
           })} */}
         </div>
     );
-  }
-
-  componentWillReceiveProps(nextProps){
-    if(this.props.idx !== nextProps.idx) {
-      this.setState({popup: undefined})
-    }
   }
 }

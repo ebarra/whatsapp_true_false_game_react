@@ -58,11 +58,12 @@ export default class Quiz extends React.Component {
       let nav_sec_class = (question.secure === true) ? "nav_secure fa fa-lock" : "nav_no-secure fa fa-info-circle";
       let feedback_iframe;
       let toggle_feedback_button;
-      if(question.type === "iframe" && show_feedback){
+      // if(question.type === "iframe" && show_feedback){
+      if(show_feedback){
         if(question.true_or_false === false){
-          feedback_iframe = <div className={"feedback_iframe " + (this.state.hide_feedback ? "redux" : "")} key={1}><div className={"feedback_i_content " + (this.state.hide_feedback ? "hide_op" : "")}><p className="content01">{question.source_name}</p> <p className="content02">es un bulo sobre la salud como hay muchos. conviene contrastar la información y con una simple búsqueda en internet podemos ver que es falsa, por ejemplo <a href={question.feedback_search} target="_blank">con esta simple búsqueda</a></p><p className="content03">podemos encontrar webs muy útiles dedicadas a destapar este tipo de bulos, por ejemplo este lo desmienten en <a href={question.feedback_path} target="_blank">{question.feedback_sitename}</a></p></div><div className="toggleFeedback" onClick={() => this.toggleFeedback()} key={0}>ver feedback <Icon icon="down_arrow" className={"control control_down_arrow"}/></div></div>;
+          feedback_iframe = <div className={"feedback_iframe " + (this.state.hide_feedback ? "redux" : "")} key={1}><div className={"feedback_i_content " + (this.state.hide_feedback ? "hide_op" : "")}><p className="content01">{question.source_name}</p> <p className="content02">es un email fraudulento y suelen estar en la carpeta de spam. conviene contrastar la información y con una simple búsqueda en internet podemos ver que es falso, por ejemplo <a href={question.feedback_search} target="_blank">con esta simple búsqueda</a></p><p className="content03">podemos encontrar webs muy útiles dedicadas a destapar este tipo de fraudes, por ejemplo esto lo desmienten en <a href={question.feedback_path} target="_blank">{question.feedback_sitename}</a></p></div><div className="toggleFeedback" onClick={() => this.toggleFeedback()} key={0}>ver feedback <Icon icon="down_arrow" className={"control control_down_arrow"}/></div></div>;
         } else {
-          feedback_iframe = <div className={"feedback_iframe " + (this.state.hide_feedback ? "redux" : "")} key={1}><div className={"feedback_i_content " + (this.state.hide_feedback ? "hide_op" : "")}><p className="content01">{question.source_name}</p><p className="content02">fíjate que viene de un medio reputado y que si buscas en internet información adicional verás la noticia en diferentes webs y periódicos también de prestigio</p></div><div className="toggleFeedback" onClick={() => this.toggleFeedback()} key={0}>ver feedback <Icon icon="down_arrow" className={"control control_down_arrow"}/></div></div>;
+          feedback_iframe = <div className={"feedback_iframe " + (this.state.hide_feedback ? "redux" : "")} key={1}><div className={"feedback_i_content " + (this.state.hide_feedback ? "hide_op" : "")}><p className="content01">{question.source_name}</p><p className="content02">no es spam, pero si tienes dudas, puedes buscar en internet información adicional podrás comprobar su veracidad</p></div><div className="toggleFeedback" onClick={() => this.toggleFeedback()} key={0}>ver feedback <Icon icon="down_arrow" className={"control control_down_arrow"}/></div></div>;
         }
       }
       const {questions} = this.props;
@@ -116,6 +117,7 @@ export default class Quiz extends React.Component {
               </div>
               <MailDetail subject={question.subject} preview={question.preview} mailer={question.mailer} date={question.date} mailContent={question.mailContent} idx={this.props.index} />
             </div>
+            {(show_feedback && question.show_animation === false) && feedback_iframe}
           </div>
       );
     }
