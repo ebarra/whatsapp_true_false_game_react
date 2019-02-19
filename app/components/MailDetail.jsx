@@ -34,15 +34,15 @@ export default class MailDetail extends React.Component {
             </div>
           </div>
           <div className="mailContent">
-            <div className={"img " + mailContent.image.alignment}><img style={{width:mailContent.image.size + "%"}} src={mailContent.image.href} alt="main_logo"/></div>
+            {mailContent.image ? <div className={"img " + mailContent.image.alignment}><img style={{width:mailContent.image.size + "%"}} src={mailContent.image.href} alt="main_logo"/></div> : null}
             {mailContent.paragraphs.map((p, i) => {
               return [p.text ? <p className="text" key={"text" + i}>{p.text}</p> : null,
                 p.link ?
                   <div className="fakeLink" key={"link" + i}>
-                    <p className="link" onClick={()=>{this.handlePopUp(i)}} >{p.link.text}</p>
+                    <p className="link" style={{fontSize:p.link.size + "px"}} onClick={()=>{this.handlePopUp(i)}} >{p.link.text}</p>
                     <p className="popUp" style={{display: this.state.popup === i ? 'block' : 'none'}}>
                       <span className="triangle"></span>
-                      <span className="text">Este link te llevaría a:</span>
+                      <span className={"text"}>Este link te llevaría a:</span>
                       <br/>
                       <span className="maliciousLink">{truncate(p.link.href, {'length': 55})}</span>
                     </p>
@@ -62,7 +62,9 @@ export default class MailDetail extends React.Component {
                     </div>
                   </div>
                 : null,
-                p.image ? <div key={"img" + i} className={"img " + p.image.alignment}><img style={{width:p.image.size + "%"}} src={p.image.href} alt={p.image.href}/></div> : null];
+                p.image ? <div key={"img" + i} className={"img " + p.image.alignment}><img style={{width:p.image.size + "%"}} src={p.image.href} alt={p.image.href}/></div> : null,
+                p.footer ? <div key={"footer" + i} className="footer">{p.footer.map((t,i)=><p className="text" key={"footerText" + i}>{Object.values(t)}</p>)}</div> : null
+              ];
             }
             )}
           </div>

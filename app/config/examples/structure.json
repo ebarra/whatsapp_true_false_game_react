@@ -1,17 +1,52 @@
 {
-  "mailContent": {
-    "image": {"alignment": "", "href": ""},
-    "paragraph":  {
-      "text_01": "",
-      "link": {"text": "", "href": ""},
-      "text_02": ""
+  "mail": {
+    "mailContent": {
+      "image": {
+        "alignment": "",
+        "size": "",
+        "href": ""
+      },
+      "paragraphs": [
+        {
+          "text": ""
+        },
+        {
+          "image": {
+            "alignment": "",
+            "size": "",
+            "href": ""
+          }
+        },
+        {
+          "link": {
+            "text": "",
+            "href": ""
+          }
+        },
+        {
+          "button": {
+            "text": "",
+            "buttonContent": "",
+            "href": ""
+          }
+        }
+      ]
     }
   },
-  "whatsappContent": {
-    "text_01": "",
-    "image_01": "",
-    "text_02": "",
-    "image_02": "",
-    "image_03": ""
+
+  "whatsapp": {
+    "whatsappContent": {
+      "text_01": "",
+      "image_01": {
+        "href": "",
+        "text": ""
+      },
+      "text_02": "",
+      "image_02": {
+        "href": "",
+        "text": ""
+      },
+      "image_03": ""
+    }
   }
 }
