@@ -25,10 +25,18 @@
         },
         {
           "button": {
+            "color": "",
             "text": "",
             "buttonContent": "",
             "href": ""
           }
+        },
+        {
+          "footer": [
+            {"text":""},
+            {"text":""},
+            {"text":""}
+          ]
         }
       ]
     }

@@ -51,13 +51,13 @@
     &.user_wrong_answer
       background-color: $red
     &.user_not_answer
-      background-color: $maincolor
+      background-color: yellow
       color: $background
 
 .feedback_iframe
   position: absolute
   top: 9.5em
-  z-index: 100
+  z-index: 1
   width: 95%
   //margin: 0 auto
   height: calc(100vh - 18.6em)
@@ -255,7 +255,6 @@
       font-size: calc(.6vh + .6vw + .4em)
     &.redux
       height: 2.3em
-
 
 
 @media (max-width: $media11) and (orientation: portrait)

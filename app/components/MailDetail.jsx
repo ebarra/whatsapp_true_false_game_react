@@ -39,7 +39,7 @@ export default class MailDetail extends React.Component {
               return [p.text ? <p className="text" key={"text" + i}>{p.text}</p> : null,
                 p.link ?
                   <div className="fakeLink" key={"link" + i}>
-                    <p className="link" style={{fontSize:p.link.size + "px"}} onClick={()=>{this.handlePopUp(i)}} >{p.link.text}</p>
+                    <p className={p.link.size > 40 ? "link big" : "link"} style={{fontSize:p.link.size + "px"}} onClick={()=>{this.handlePopUp(i)}} >{p.link.text}</p>
                     <p className="popUp" style={{display: this.state.popup === i ? 'block' : 'none'}}>
                       <span className="triangle"></span>
                       <span className={"text"}>Este link te llevaría a:</span>
@@ -52,7 +52,7 @@ export default class MailDetail extends React.Component {
                   <div className="buttonBox" key={"button" + i}>
                     <p className="textButtonBox">{p.button.text}</p>
                     <div className="fakeLink buttonLink" key={"button" + i}>
-                      <button className="button" onClick={()=>{this.handlePopUp(i)}} >{p.button.buttonContent}</button>
+                      <button className="button" style={p.button.color && p.button.textColor ? {background:p.button.color, color:p.button.textColor} : null} onClick={()=>{this.handlePopUp(i)}} >{p.button.buttonContent}</button>
                       <p className="popUp" style={{display:this.state.popup === i ? 'block' : 'none'}}>
                         <span className="triangle"/>
                         <span className="text">Este link te llevaría a:</span>

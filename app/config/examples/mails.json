@@ -231,6 +231,8 @@
           },
           {
             "button": {
+              "color": "orange",
+              "textColor": "black",
               "text": "Date prisa, solo tienes una semana para canjearlo.",
               "buttonContent": "descarga el cupón aquí",
               "href": ""
