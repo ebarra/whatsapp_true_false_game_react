@@ -1,6 +1,6 @@
 import React from 'react';
 import truncate from 'lodash/truncate';
-export default class MailDetail extends React.Component {
+export default class WhatsAppDetail extends React.Component {
   constructor(props){
     super(props);
     this.state = {};

@@ -1,7 +1,7 @@
 import React from 'react';
-import {goToQuestion} from './../reducers/actions';
+import {goToQuestion} from '../reducers/actions';
 
-export default class MailItem extends React.Component {
+export default class WhatsAppItem extends React.Component {
   handleClick(idx) {
 this.props.dispatch(goToQuestion(idx));
   }

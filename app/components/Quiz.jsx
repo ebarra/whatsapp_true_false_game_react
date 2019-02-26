@@ -4,8 +4,8 @@ import Animation from './Animation.jsx';
 import {stopAnimation, addObjectives, addSizes} from './../reducers/actions';
 import * as Utils from '../vendors/Utils.js';
 import Icon from './Icon.jsx';
-import MailItem from './MailItem.jsx';
-import MailDetail from './MailDetail.jsx';
+import WhatsAppItem from './WhatsAppItem.jsx';
+import WhatsAppDetail from './WhatsAppDetail.jsx';
 
 export default class Quiz extends React.Component {
   constructor(props){
@@ -112,10 +112,10 @@ export default class Quiz extends React.Component {
               <div className="mailList">
                 <div className="inbox"><span className="fa fa-envelope icon"></span> Bandeja de recibidos</div>
                 <ul>
-                  {questions.map((q, idx) => <MailItem dispatch={this.props.dispatch} key={idx} subject={q.subject} preview={q.preview} mailer={q.mailer} date={q.date} isActive={idx === this.props.index} idx={idx} />)}
+                  {questions.map((q, idx) => <WhatsAppItem dispatch={this.props.dispatch} key={idx} subject={q.subject} preview={q.preview} mailer={q.mailer} date={q.date} isActive={idx === this.props.index} idx={idx} />)}
                 </ul>
               </div>
-              <MailDetail subject={question.subject} preview={question.preview} mailer={question.mailer} date={question.date} mailContent={question.mailContent} idx={this.props.index} />
+              <WhatsAppDetail subject={question.subject} preview={question.preview} mailer={question.mailer} date={question.date} mailContent={question.mailContent} idx={this.props.index} />
             </div>
             {(show_feedback && question.show_animation === false) && feedback_iframe}
           </div>
