@@ -43,18 +43,24 @@
   },
 
   "whatsapp": {
-    "whatsappContent": {
-      "text_01": "",
-      "image_01": {
-        "href": "",
-        "text": ""
+    "whatsappContent": [
+      {
+        "text": "",
+        "time": ""
       },
-      "text_02": "",
-      "image_02": {
-        "href": "",
-        "text": ""
+      {
+        "image": {
+          "href": ""
+        },
+        "time": ""
       },
-      "image_03": ""
-    }
+      {
+        "link": {
+          "text": "",
+          "href": ""
+        },
+        "time": ""
+      }
+    ]
   }
 }

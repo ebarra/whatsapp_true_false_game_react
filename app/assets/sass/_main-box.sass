@@ -8,7 +8,7 @@
   overflow: hidden
   color: $secondarycolor
   .main_text
-    color: $secondarycolor
+    color: $colorIcons
     //font-size: calc(5.5vh + 2em)
     //padding: .7em 6em 1em 1em
     font-weight: bold
@@ -111,19 +111,12 @@
     margin-top: 4.4em
     @include flex
     align-items: flex-start
-    .mailList
+    .whatsappList
       width: 30%
       height: inherit
       overflow-y: auto
-      background-color: $lightgray
-      .inbox
-        padding: 1em 1.8em
-        background-color: $background
-        color: white
-        font-size: 1em
-        font-weight: bold
-        .icon
-          margin-right: .5em
+      background-color: white
+      font-size: .8em
       ul
         margin: 0
         li
@@ -132,59 +125,61 @@
           justify-content: space-between
           p
             margin: 0
-          &.mailItem
+          &.whatsappItem
+            position: relative
             border: 1px solid white
             padding: 1em
+            border-bottom: 1px solid $midgray
+            +transition_default
             &:hover
               //opacity: .5
               color: $secondarycolor
-              background-color: $gray
+              background-color: $midgray
               +transition_default
             &.active
-              background-color: $midgray
+              background-color: $lightgray
               +cursor
               +transition_default
               &:hover
                 color: $secondarycolor
-                background-color: $midgray
+                background-color: $lightgray
                 +transition_default
             .imgProf
               +flex
               justify-content: center
+              margin-right: 1em;
               width: 3.7em
               height: 3.7em
               border-radius: 50%
-              background-color: white
               border: 1px solid $gray
-              .letter
-                font-size: 2em
-                text-transform: capitalize
-                opacity: .6
+              overflow: hidden
+              img
+                object-fit: cover
+                height: 3.7em
             .text
               width: 80%
-              .info
-                +flex
-                justify-content: space-between
-                margin-bottom: .5em
-                opacity: .5
-                font-size: .8em
               .subject
                 font-size: 1em
                 font-weight: bold
               .preview
                 opacity: .7
-    .mailDetail
+            .time
+              position: absolute
+              bottom: .5em
+              right: 1em
+              font-size: .7em
+              opacity: .5
+    .whatsappDetail
       //flex: 1
       width: 70%;
       height: inherit
       overflow-y: auto
       overflow-x: hidden
-      padding: 2em
+      padding: 1.5em 2em 2em
+      background: url(../images/wBG.png);
+      background-repeat: no-repeat;
+      background-size: cover;
       .mainText
-        font-size: 1.5em
-        margin-top: 0
-        //padding-bottom: 1em
-        //border-bottom: 1px solid $gray
         p
           margin: 0
         .subject
@@ -193,53 +188,51 @@
           .icon
             font-size: .8em
             margin-left: .2em
-      .mailer
-        +flex
-        justify-content: flex-start
-        padding-bottom: 1em
-        border-bottom: 1px solid $gray
-        .imgProf
-          +flex
-          justify-content: center
-          width: 3.7em
-          height: 3.7em
-          border-radius: 50%
-          background-color: white
-          border: 1px solid $gray
-          .letter
-            font-size: 2em
-            text-transform: capitalize
-            opacity: .6
         .text
           width: 80%
           margin-left: 1em
           p
             margin: 0
-          .info
-            +flex
-            justify-content: flex-start
-            margin-bottom: .5em
-            opacity: .5
-            font-size: .8em
-            .mailerPerson
-              margin-right: 1em
-              font-weight: bold
-      .mailContent
-        margin-left: 4em
-        margin-top: 2em
-        margin-bottom: 4em
-        .buttonBox
-          .textButtonBox
-            margin-top: 2em
+      .whatsappContent
+        +column-flex
+        align-items: flex-start
+        .balloon
+          padding: .6em 1em
+          border-radius: .3em
+          margin: 1em 1em .5em
+          padding-bottom: 2em
+          max-width: 80%
+          font-size: .8em
+          position: relative
+          background-color: white
+          &:after
+            position: absolute
+            bottom: 0
+            left: -.5em
+            content: ''
+            background: url('../images/balloon_triangle.png')
+            display: block
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+            width: 1.1em
+            height: .8em
+        .time
+          position: absolute
+          bottom: .5em
+          right: .5em
+          opacity: .5
+          font-size: .7em
         .fakeLink
           position: relative
           .popUp
             display: none
             position: absolute
-            top: 1.5em
-            left: 5em
+            top: 2.2em
+            left: 2em
             width: 16em
             padding: 1em
+            margin-bottom: 1em
             font-size: .8em
             background-color: $lightgray
             z-index: 1
@@ -260,41 +253,10 @@
             text-decoration: underline
             color: blue
             +hand_cursor
-          &.buttonLink
-            .popUp
-              top: 3em
-              margin-bottom: 1em
+            margin: 0
         .img
           img
-            width: 50%
-          &.center
-            text-align: center
-          &.left
-            text-align: left
-          &.right
-            text-align: right
-        .button
-          //outline: none
-          //border: none
-          +hand_cursor
-          border-radius: .3em
-          background-color: $secondarycolor
-          background: -moz-linear-gradient(top, rgba(15,86,148,1) 0%, rgba(6,41,72,1) 100%)
-          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(15,86,148,1)), color-stop(100%, rgba(6,41,72,1)))
-          background: -webkit-linear-gradient(top, rgba(15,86,148,1) 0%, rgba(6,41,72,1) 100%)
-          background: -o-linear-gradient(top, rgba(15,86,148,1) 0%, rgba(6,41,72,1) 100%)
-          background: -ms-linear-gradient(top, rgba(15,86,148,1) 0%, rgba(6,41,72,1) 100%)
-          background: linear-gradient(to bottom, rgba(15,86,148,1) 0%, rgba(6,41,72,1) 100%)
-          color: $midgray
-          padding: 1em 1.5em
-          font-size: 1em
-        .footer
-          background-color: $lightgray
-          padding: 1em
-          p
-            margin: 0
-            font-size: .7em
-            color: $gray
+            width: 100%
     &.with_feedback
       margin-top: 8.3em
   &.main_box_finished
@@ -343,7 +305,6 @@
         margin-top: 7.5em
 
 
-
 @media (max-width: $media4)
 
   .main_box
@@ -369,16 +330,9 @@
       &.with_feedback
         margin-top: 3.1em
     .question_box
-      .mailList
+      .whatsappList
         width: 40%
-        ul
-          li
-            p
-            &.mailItem
-              .info
-              .subject
-              .preview
-      .mailDetail
+      .whatsappDetail
         width: 60%;
       &.with_feedback
         margin-top: 7.5em
@@ -391,9 +345,9 @@
       font-size: calc(4.5vh + 2.2em)
       padding: .8em 1em .8em .8em
     .question_box
-      .mailList
+      .whatsappList
         display: none
-      .mailDetail
+      .whatsappDetail
         width: 100%;
 
 
@@ -534,12 +488,10 @@
 @media (max-width: $media10)
   .main_box
     .question_box
-      .mailDetail
-        .header
-          .mailer
-            .imgProf
-              height: 3em
-        .mailContent
+      .whatsappDetail
+        .imgProf
+          height: 3em
+        .whatsappContent
           margin-left: 0
           .img
             img

@@ -94,7 +94,7 @@ export default class Quiz extends React.Component {
                   <div className="box_url">
                     <div className="url_group">
                       <span className={nav_sec_class} />
-                      <span className="nav_url">https://mail.elab.com/mail/#inbox/{question.source_url}</span>
+                      <span className="nav_url">https://elab.whatsapp.com/{question.source_url}</span>
                     </div>
 
                     <span className="nav_star fa fa-star-o" />
@@ -109,13 +109,12 @@ export default class Quiz extends React.Component {
               </div>
             </div>
             <div className={"question_box " + (show_feedback ? "with_feedback" : "") }>
-              <div className="mailList">
-                <div className="inbox"><span className="fa fa-envelope icon"></span> Bandeja de recibidos</div>
+              <div className="whatsappList">
                 <ul>
-                  {questions.map((q, idx) => <WhatsAppItem dispatch={this.props.dispatch} key={idx} subject={q.subject} preview={q.preview} mailer={q.mailer} date={q.date} isActive={idx === this.props.index} idx={idx} />)}
+                  {questions.map((q, idx) => <WhatsAppItem dispatch={this.props.dispatch} key={idx} chatImg={q.chatImg} title={q.title} preview={q.preview} whatsappContent={q.whatsappContent} isActive={idx === this.props.index} idx={idx} />)}
                 </ul>
               </div>
-              <WhatsAppDetail subject={question.subject} preview={question.preview} mailer={question.mailer} date={question.date} mailContent={question.mailContent} idx={this.props.index} />
+              <WhatsAppDetail title={question.title} preview={question.preview} whatsappContent={question.whatsappContent} idx={this.props.index} />
             </div>
             {(show_feedback && question.show_animation === false) && feedback_iframe}
           </div>
