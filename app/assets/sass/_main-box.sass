@@ -122,27 +122,27 @@
         li
           +hand_cursor
           +flex
-          justify-content: space-between
           p
             margin: 0
           &.whatsappItem
             position: relative
             border: 1px solid white
             padding: 1em
-            border-bottom: 1px solid $midgray
+            border-bottom: 1px solid $lightgray
             +transition_default
             &:hover
               //opacity: .5
               color: $secondarycolor
-              background-color: $midgray
+              background-color: $lightgray
               +transition_default
             &.active
-              background-color: $lightgray
+              color: white
+              background-color: $colorIcons
               +cursor
               +transition_default
               &:hover
-                color: $secondarycolor
-                background-color: $lightgray
+                color: white
+                background-color: $colorIcons
                 +transition_default
             .imgProf
               +flex
@@ -155,7 +155,7 @@
               overflow: hidden
               img
                 object-fit: cover
-                height: 3.7em
+                height: 5em
             .text
               width: 80%
               .subject
