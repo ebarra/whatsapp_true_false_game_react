@@ -32,7 +32,7 @@
       "chatImg": "http://68.media.tumblr.com/1a62ead3eac4c75336a758ab1d39e575/tumblr_mlyd8vmINm1qd2uw5o1_500.png",
       "whatsappContent": [
         {
-          "image": "../assets/images/other/WhatsAppGold.jpg",
+          "image": "./assets/images/other/WhatsAppGold.jpg",
           "time": "22:50"
         },
         {
@@ -119,7 +119,7 @@
       "chatImg": "http://oi47.tinypic.com/2ic4dol.jpg",
       "whatsappContent": [
         {
-          "image": "../assets/images/other/nespresso.png",
+          "image": "./assets/images/other/nespresso.png",
           "time": "20:40"
         },
         {
@@ -149,7 +149,7 @@
       "chatImg": "https://estaticos.elperiodico.com/resources/jpg/9/3/1485863077039.jpg",
       "whatsappContent": [
         {
-          "image": "../assets/images/other/manuelVals.png",
+          "image": "./assets/images/other/manuelVals.png",
           "time": "20:14"
         },
         {
@@ -179,7 +179,7 @@
       "chatImg": "http://2.bp.blogspot.com/-lYi0rzWItHw/VEBEB0iOV3I/AAAAAAAABjM/NDhnSGpRcwI/s1600/aaa.jpg",
       "whatsappContent": [
         {
-          "image": "../assets/images/other/cupon_mercadona.png",
+          "image": "./assets/images/other/cupon_mercadona.png",
           "time": "20:00"
         },
         {
@@ -263,7 +263,7 @@
           "time": "17:58"
         },
         {
-          "image": "../assets/images/other/mujer-asesinada.png",
+          "image": "./assets/images/other/mujer-asesinada.png",
           "time": "17:58"
         },
         {
